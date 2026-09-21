@@ -1,0 +1,60 @@
+name: Feature request / 기능 제안
+description: Suggest an app improvement without including private or production-sensitive information. / 개인정보나 운영 민감정보 없이 앱 개선을 제안하세요.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Public issue notice / 공개 이슈 안내
+        GitHub Issues are public. Do not include PLC IP addresses, host names, project files, passwords, access tokens, serial numbers, customer names, screenshots with sensitive data, or production configuration details.
+
+        GitHub Issues는 공개됩니다. PLC IP 주소, 호스트명, 프로젝트 파일, 비밀번호, 접근 토큰, 시리얼 번호, 고객명, 민감정보가 보이는 화면, 운영 설정 상세를 작성하지 마세요.
+
+        You may write in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, or Vietnamese.
+        한국어, English, 日本語, 简体中文, 繁體中文, Tiếng Việt로 작성할 수 있습니다.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve / 해결할 문제
+      description: Describe the workflow difficulty or missing capability. / 불편한 작업 흐름이나 부족한 기능을 작성하세요.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change / 제안 내용
+      description: Describe the desired behavior, not private deployment details. / 비공개 운영 상세가 아닌 원하는 동작을 작성하세요.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example use case / 사용 예시
+      description: Give an anonymized example of how the feature would help. / 기능이 도움이 되는 익명화된 사용 예시를 작성하세요.
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version / 앱 버전
+      description: Enter the version shown in the app or Google Play. / 앱 또는 Google Play에 표시된 버전을 입력하세요.
+      placeholder: "0.0.0 (versionCode 0)"
+    validations:
+      required: true
+  - type: input
+    id: android_version
+    attributes:
+      label: Android version / Android 버전
+      description: Enter the Android version, not a device identifier. / 기기 식별자가 아닌 Android 버전을 입력하세요.
+      placeholder: Android 14
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_ack
+    attributes:
+      label: Public information confirmation / 공개 정보 확인
+      options:
+        - label: I confirm that this request contains no private, customer, credential, network, project-file, or production-sensitive information. / 이 제안에는 개인정보, 고객 정보, 자격 증명, 네트워크 정보, 프로젝트 파일, 운영 민감정보가 없습니다.
+          required: true
