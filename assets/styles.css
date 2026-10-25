@@ -1,2 +1,3 @@
 /* PLC 업무수첩 — warm neutral canvas, unchanged application screenshots. */
 .page-plc .hero-visual { background: var(--soft); }
+.page-plc .plc-screens figcaption { text-align: center; }
